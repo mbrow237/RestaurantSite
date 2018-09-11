@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<!--
+    Name: Melvin Brown 
+    Date Created: 9/10/2018 
+    Most recent revision: 1.0
+-->
+<html lang="en"> 
+    <head> 
+        <title>Golden Browns' World Famous Chicken</title>	
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Golden Browns</h1>
+			<hr />
+			<a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
+			<hr />
+        </header>
+
+        <nav>
+
+        </nav>
+		
+		<section>
+			<article id="ContactUs">
+				<form action="submit.html" method="POST">
+					<label for="name">Name: </label>
+						<input type="text" id="name" /><br />
+					<label for="name">Email: </label>
+						<input type="text" id="email" /><br />
+					<label for="name">Phone: </label>
+						<input type="text" id="phone" /><br />
+						
+					<label for="inquiryReason">Reason for Inquiry: </label>
+						<select id="inquiryReason" name="inquiryReason">
+							<option value="catering" selected>Catering</option>
+							<option value="private">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select><br />
+						
+					<label for="additionalInfo">Additional Information:</label>
+						<textarea id="additionalInfo" name="additionalInfo"></textarea><br />
+					
+					<p>Have you been to the restaurant?
+						<input type="radio" id="choice1" name="firstVisit" value="no"/>
+							<label for="choice1">No</label>
+						<input type="radio" id="choice2" name="firstVisit" value="yes"/>
+							<label for="choice2">Yes</label></p><br />
+					
+					<p>Best days to contact you: 
+						<input type="checkbox" id="monday" name="days" value="monday"/> 
+							<label for="monday">M</label>
+						<input type="checkbox" id="tuesday" name="days" value="tuesday"/> 
+							<label for="tuesday">T</label>
+						<input type="checkbox" id="wednesday" name="days" value="wednesday"/> 
+							<label for="wednesday">W</label>
+						<input type="checkbox" id="thursday" name="days" value="thursday"/> 
+							<label for="thursday">Th</label>
+						<input type="checkbox" id="friday" name="days" value="friday"/> 
+							<label for="friday">F</label><br />
+
+						<input type="submit" value="Send Request" /><br />
+							
+				</form>
+			</article>
+		</section>
+
+        <footer>
+		<hr />
+			<p>123 Chickapea Road, Charlotte, North Carolina, 55555</p>
+			<p>555-244-2536</p>
+        </footer>
+    </body> 
+</html>
