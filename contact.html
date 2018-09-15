@@ -1,37 +1,48 @@
 <!DOCTYPE html> 
 <!--
     Name: Melvin Brown 
-    Date Created: 9/10/2018 
-    Most recent revision: 1.0
+    Date Created: 9/13/2018 
+    Most recent revision: 1.1
 -->
 <html lang="en"> 
     <head> 
-        <title>Golden Browns' World Famous Chicken</title>	
+        <title>Golden Browns' World Famous Chicken</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<style>
+		
+
+			section input, select, textarea{
+				margin-bottom: 5px;
+				margin-top: 5px;
+				
+			}
+			
+		.required{
+			font-weight: bold;
+		}		
+		</style>
     </head> 
     
     <body>
         <header>
-            <h1>Golden Browns</h1>
-			<hr />
-			<a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
-			<hr />
+            <h1>Golden <span class="brown">Browns</span></h1>
         </header>
 
         <nav>
-
+			<a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
         </nav>
 		
 		<section>
 			<article id="ContactUs">
 				<form action="submit.html" method="POST">
-					<label for="name">Name: </label>
+					<label for="name" class="required">Name: </label>
 						<input type="text" id="name" /><br />
-					<label for="name">Email: </label>
+					<label for="name" class="required">Email: </label>
 						<input type="text" id="email" /><br />
-					<label for="name">Phone: </label>
+					<label for="name"class="required">Phone: </label>
 						<input type="text" id="phone" /><br />
 						
-					<label for="inquiryReason">Reason for Inquiry: </label>
+					<label for="inquiryReason" class="required">Reason for Inquiry: </label>
 						<select id="inquiryReason" name="inquiryReason">
 							<option value="catering" selected>Catering</option>
 							<option value="private">Private Party</option>
@@ -42,13 +53,13 @@
 					<label for="additionalInfo">Additional Information:</label>
 						<textarea id="additionalInfo" name="additionalInfo"></textarea><br />
 					
-					<p>Have you been to the restaurant?
+					<p class="required">Have you been to the restaurant?
 						<input type="radio" id="choice1" name="firstVisit" value="no"/>
 							<label for="choice1">No</label>
 						<input type="radio" id="choice2" name="firstVisit" value="yes"/>
 							<label for="choice2">Yes</label></p><br />
 					
-					<p>Best days to contact you: 
+					<p class="required">Best days to contact you: 
 						<input type="checkbox" id="monday" name="days" value="monday"/> 
 							<label for="monday">M</label>
 						<input type="checkbox" id="tuesday" name="days" value="tuesday"/> 

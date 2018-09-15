@@ -1,71 +1,133 @@
 <!DOCTYPE html> 
 <!--
     Name: Melvin Brown 
-    Date Created: 9/10/2018 
-    Most recent revision: 1.0
+    Date Created: 9/13/2018 
+    Most recent revision: 1.1
 -->
 <html lang="en"> 
     <head> 
         <title>Golden Browns' World Famous Chicken</title>	
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			body section {
+				background-color: #ffeedd;
+				border: thick solid black;
+				border-radius: 3px;
+				margin: 0 auto;
+				max-width: 1100px;
+		}
+		
+		table, th, td{
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px 10px;
+			max-width: 1100px;
+			text-align: center;
+		}
+
+		table {
+			width: 90%;
+			margin: auto;
+		}
+
+		.foodTitle{
+			font-weight: bold;
+			font-size: 120%;
+		}
+		</style>
     </head> 
     
     <body>
         <header>
-            <h1>Golden Browns</h1>
-			<hr />
-			<a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
-			<hr />
+            <h1>Golden <span class="brown">Browns</span></h1>
         </header>
 
         <nav>
-
+			<a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
         </nav>
 		
 		<section>
-			<article id="menu">
+			<article id="food">
 				<table>
+					<thead>
+						<tr>
+							<th colspan="3"><h1>Food Items</h1></th>
+						</tr>	
+					</thead>
 					<tr>
 						<td>
-							<h4>Fried Chicken and Fries</h4>
-							<p>Our world famous combo. Come enjoy our golden brown fried chicken, with you choice of drumsticks, wings, or breast.
+							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
+							Our world famous combo. Come enjoy our golden brown fried chicken, with you choice of drumsticks, wings, or breast.
 							Served with a plate of our cajun golden brown french fries. Also comes with a fresh buttery biscuit and medium drink.</p>
 							<p>$9.95</p>	
 						</td>
 						
 						<td>
-							<h4>Spicy Chicken Sandwich and Fries</h4>
-							<p>Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
+							<p><span class="foodTitle">Spicy Chicken Sandwich and Fries</span><br />
+							Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
 							Served with a plate of our cajun golden brown french fries. Includes drink.</p>
 							<p>$8.50</p>
 						</td>
 						<td>
-							<h4>Spicy Chicken Sandwich and Fries</h4>
-							<p>Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
+							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
+							Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
 							Served with a plate of our cajun golden brown french fries. Includes drink.</p>
 							<p>$8.50</p>
 						</td>						
 					</tr>
 					<tr>
 						<td>
-							<h4>Fried Chicken and Fries</h4>
-							<p>Our world famous combo. Come enjoy our golden brown fried chicken, with you choice of drumsticks, wings, or breast.
+							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
+							Our world famous combo. Come enjoy our golden brown fried chicken, with you choice of drumsticks, wings, or breast.
 							Served with a plate of our cajun golden brown french fries. Also comes with a fresh buttery biscuit and medium drink.</p>
 							<p>$9.95</p>	
 						</td>
 						
 						<td>
-							<h4>Spicy Chicken Sandwich and Fries</h4>
-							<p>Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
+							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
+							Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
 							Served with a plate of our cajun golden brown french fries. Includes drink.</p>
 							<p>$8.50</p>
 						</td>
 						<td>
-							<h4>Spicy Chicken Sandwich and Fries</h4>
-							<p>Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
+							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
+							Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
 							Served with a plate of our cajun golden brown french fries. Includes drink.</p>
 							<p>$8.50</p>
 						</td>						
 					</tr>					
+				</table>
+			</article>
+			
+		<article id="beverages">
+			<table>
+					<thead>
+						<tr>
+							<th colspan="2"><h1>Beverages</h1></th>
+						</tr>	
+					</thead>
+					<tbody>
+						<tr>
+							<td>Root Beer</td>
+							<td>$3.50</td>
+						</tr>
+						
+						<tr>
+							<td>Bottled Water</td>
+							<td>$1.25</td>
+						</tr>
+						
+						<tr>
+							<td>Lemondade</td>
+							<td>$1.00</td>
+						</tr>
+							
+						<tr>
+							<td>Iced Tea</td>>
+							<td>$1.25</td>
+						</tr>
+					</tbody>
 				</table>
 			</article>
 		</section>
