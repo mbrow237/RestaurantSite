@@ -2,39 +2,135 @@
 <!--
     Name: Melvin Brown 
     Date Created: 9/13/2018 
-    Most recent revision: 1.1
+    Most recent revision: 1.3
 -->
 <html lang="en"> 
-    <head> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
         <title>Golden Browns' World Famous Chicken</title>
-		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		       <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+	   <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	   <link href="styles/main.css" rel="stylesheet" type="text/css" />
+	   
+	   <style>
+			#myCarousel{
+			border: thick solid black;
+			}
+	   </style>
     </head> 
     
     <body>
-        <header>
-            <h1>Golden <span class="brown">Browns</span></h1>
-        </header>
+	<div class="container">
+		<div class = "row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<noscript><h1 style="text-align: Center; background-color: #ffeedd; border:thick solid black;">Javascript is disabled! This site is best viewed with Javascript enabled</h1></noscript>
+			</div>
+		</div>
+			
+		<div class="row"> <!-- Jumbotron -->
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<header class="jumbotron">
+					<h1>Golden <span class="brown">Browns</span></h1>
+					<h2 class="font-italic">Home of the world's famous Golden Brown Chicken</h2>
+					<h3 class="text-right mt-5">We are opening a new location!</h3>
+					<h5 class="text-right">12345 Poultry Drive</h5> 
+				</header>
+			</div>
+		</div>
 
-        <nav>
-			<a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
-        </nav>
+		 <!-- Nav -->
+
+		<nav>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-md-12 navbar">
+					<a href="index.html" class="btn col-lg-2"><span class="oi oi-home" title="home" aria-hidden="true"></span>Home</a> <a href="menu.html" class="btn col-lg-2">Menu</a> <a href="contact.html" class="btn col-lg-2">Contact Us</a>
+				</div>	
+			</div>	
+		</nav>
+
+
+		
 		
 		<section>
-			<figure>
-				<img style="margin:auto 0;" src="images/fried-chicken.jpg" alt="Our famous golden brown chicken!"/>
-			</figure>
-
-			<article id="restaurantDescription">
-				<h3 style="text-align: center;">Welcome to Golden Browns, home of the world famous golden brown fried chicken!</h3>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel"> <!--Carousel  -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+						
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/map.jpg" alt="New Location" style="width:100%; height:100%;"/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>New location coming soon!</h5>
+								<p>12345 Poultry Drive</p>
+							</div>	
+					</div>	
+					
+					<div class="carousel-item">
+						<img src="images/waffle.jpg" alt="Seasonal Item" style="width:100%; height:100%;"/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>New seasonal menu coming soon</h5>
+								<p>Enjoy Waffles with Maple Syrup, as well as Pumpkin Pie this autumn season.</p>
+							</div>
+					</div>
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula ac enim a finibus. Etiam a dolor neque. Nullam sed vehicula orci. Sed pulvinar ullamcorper turpis, at imperdiet nibh tincidunt eget. Vestibulum tempor elit nec nulla mattis, id mattis arcu varius. Duis eu arcu sit amet nunc consequat fermentum. In id magna in libero posuere pellentesque. Proin dui risus, posuere ac quam nec, accumsan venenatis magna. Suspendisse lacinia arcu vehicula purus aliquam, vel varius dui feugiat.Duis sollicitudin, enim eu malesuada finibus, arcu sapien tincidunt felis, nec dictum lacus sem eu nisi. Ut bibendum efficitur mi at laoreet. Sed viverra tellus mauris, sit amet accumsan leo tristique nec. Maecenas auctor ipsum purus, ut ullamcorper nulla elementum eget. Maecenas porttitor suscipit vulputate. Proin quis nunc id ex rhoncus blandit. Sed nec malesuada libero, at venenatis mi. Ut tempus ipsum ex, vitae dignissim urna lacinia non. Suspendisse condimentum ante erat, vel consectetur sapien eleifend id.</p>
-			</article>
+					<div class="carousel-item">
+						<img src="images/brew.jpg" alt="Special Brew" style="width:100%; height:100%;"/>
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Drink of the Month</h5>
+									<p>SG Special Brew</p>
+								</div>
+					</div>			
+				</div>
+						
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<span class="oi oi-media-step-backward"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+						
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<span class="oi oi-media-step-forward"></span>
+					<span class="sr-only">Next</span>
+				</a>						
+			</div>
+		
+		
+			<figure>
+				<div class="row no-gutters">
+					<div class="col-lg-4 offset-lg-4">
+						<img src="images/fried-chicken.jpg" alt="Our famous golden brown chicken!" style="margin-top: 20px; border: thick solid black;"/>
+					</div>
+				</div>		
+			</figure>
+			
+			<div class="row">
+				<article id="restaurantDescription" class="col-lg-6 offset-lg-3">
+						<h3 class="text-center">Welcome to Golden Browns, home of the world famous golden brown fried chicken!</h3>
+				
+						<p>Come on over and enjoy a plate of our famous golden brown fried chicken. We have the fresh ingredents this side of Charlotte. We guarantee that your fried chicken will be a crisp golden brown or your money back! Also enjoy our famous French Fries as well, made from the freshest potatoes! </p>
+						<p>Our low prices edge out most of our competitors! We have been featured in many magazines such as: <u>Charlotte Eats</u>, <u>Local Chicken Scene</u>, and <u>Charlotte today</u><. We even been featured on the food network channel. Come on down and see why everyone in Charlotte is talking about Golden Browns!</p>
+				</article>
+			</div>	
 		</section>
 
-        <footer>
-		<hr />
-			<p>123 Chickapea Road, Charlotte, North Carolina, 55555</p>
-			<p>555-244-2536</p>
-        </footer>
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<footer>
+					<p>123 Chickapea Road, Charlotte, North Carolina, 55555</p>
+					<p>555-244-2536</p>
+			
+				</footer>
+			</div>	
+		</div>
+	</div>
+		        <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body> 
 </html>

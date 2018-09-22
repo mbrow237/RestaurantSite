@@ -1,8 +1,6 @@
 
 body {
 		background: url("../images/background2.png") repeat fixed;
-		//max-width: 900px;
-		margin: 0 auto;
 }
 
 article {
@@ -11,31 +9,34 @@ article {
 }
 
 
-body section {
+body section article{
 	background-color: #ffeedd;
 	border: thick solid black;
 	border-radius: 3px;
-	margin: 0 auto;
-	max-width: 500px;
 }
 
 header, footer {
-	height: auto;
 	background-color: #ffeedd;
-	color: #fef9ff;
-	text-align: center;
-	padding: 5px 10px 5px 40px;
 	border: thick solid black;
+}
+
+
+.jumbotron{
+	background-color: #ffeedd;
+}
+
+footer {
+	margin-top: 20px;
 }
 
 footer p{
 	color: black;
+	text-align: center;
 }
 
 header h1{
 	font-family: 'Cabin Font','Segoe UI Black', sans-serif;
-	//color: #e6e600;
-	color: #b3b300;
+	color: #f9cf35;
 	font-size: 56px;
 }
 
@@ -43,15 +44,23 @@ header h1{
 	color: #ac7339;
 }
 
-nav {
-	background-color: white;
+.navbar {
+	background-color: #ffeedd;
 	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-top: thick solid black;
 	border-left: thick solid black;
 	border-right: thick solid black;
 	border-bottom: thick solid black;
 }
 
+nav .btn {
+    background-color: #3a0606;
+    color: #e4e493; 
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
 
 nav a{
 	margin-left: 40px;
@@ -59,7 +68,7 @@ nav a{
 }
 
 nav a:visited {
-	color: #999900
+	color: #ac7339
 }
 
 nav a:hover{
@@ -68,4 +77,8 @@ nav a:hover{
 
 nav a:active {
 	text-decoration: none;
+}
+
+.oi-media-step-backward {
+  fill: #000000;
 }

@@ -2,140 +2,185 @@
 <!--
     Name: Melvin Brown 
     Date Created: 9/13/2018 
-    Most recent revision: 1.1
+    Most recent revision: 1.3
 -->
 <html lang="en"> 
-    <head> 
-        <title>Golden Browns' World Famous Chicken</title>	
-		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+        <title>Golden Browns' World Famous Chicken</title>
+       <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 		
+	   <link href="styles/main.css" rel="stylesheet" type="text/css" />
+	   <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 		
 		<style>
-			body section {
+		
+		body section article{
 				background-color: #ffeedd;
 				border: thick solid black;
 				border-radius: 3px;
-				margin: 0 auto;
-				max-width: 1100px;
-		}
+		} 
 		
 		table, th, td{
 			border: 1px solid #0d1f2d;
 			border-collapse: collapse;
 			padding: 5px 10px;
-			max-width: 1100px;
 			text-align: center;
 		}
 
 		table {
-			width: 90%;
-			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
 		}
 
 		.foodTitle{
 			font-weight: bold;
 			font-size: 120%;
 		}
+		
+		tr:nth-child(odd) {
+			background-color: #e8d8c9;
+		}
+		
+		th {
+			background-color: #ffd2a5;
+		}
 		</style>
     </head> 
     
     <body>
-        <header>
-            <h1>Golden <span class="brown">Browns</span></h1>
-        </header>
+			<div class="container">
+				<div class = "row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<noscript><h1 style="text-align: Center; background-color: #ffeedd; border:thick solid black;">Javascript is disabled! This site is best viewed with Javascript enabled</h1></noscript>
+					</div>
+				</div>
+				
+				<div class="row"> <!-- Jumbotron -->
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<header class="jumbotron">
+							<h1>Golden <span class="brown">Browns</span></h1>
+							<h2 class="font-italic">Home of the world's famous Golden Brown Chicken</h2>
+							<h3 class="text-right mt-5">We are opening a new location!</h3>
+							<h5 class="text-right">12345 Poultry Drive</h5> 
+						</header>
+					</div>
+				</div>
 
-        <nav>
-			<a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
-        </nav>
-		
-		<section>
-			<article id="food">
-				<table>
-					<thead>
-						<tr>
-							<th colspan="3"><h1>Food Items</h1></th>
-						</tr>	
-					</thead>
-					<tr>
-						<td>
-							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
-							Our world famous combo. Come enjoy our golden brown fried chicken, with you choice of drumsticks, wings, or breast.
-							Served with a plate of our cajun golden brown french fries. Also comes with a fresh buttery biscuit and medium drink.</p>
-							<p>$9.95</p>	
-						</td>
-						
-						<td>
-							<p><span class="foodTitle">Spicy Chicken Sandwich and Fries</span><br />
-							Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
-							Served with a plate of our cajun golden brown french fries. Includes drink.</p>
-							<p>$8.50</p>
-						</td>
-						<td>
-							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
-							Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
-							Served with a plate of our cajun golden brown french fries. Includes drink.</p>
-							<p>$8.50</p>
-						</td>						
-					</tr>
-					<tr>
-						<td>
-							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
-							Our world famous combo. Come enjoy our golden brown fried chicken, with you choice of drumsticks, wings, or breast.
-							Served with a plate of our cajun golden brown french fries. Also comes with a fresh buttery biscuit and medium drink.</p>
-							<p>$9.95</p>	
-						</td>
-						
-						<td>
-							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
-							Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
-							Served with a plate of our cajun golden brown french fries. Includes drink.</p>
-							<p>$8.50</p>
-						</td>
-						<td>
-							<p><span class="foodTitle">Fried Chicken and Fries</span><br />
-							Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
-							Served with a plate of our cajun golden brown french fries. Includes drink.</p>
-							<p>$8.50</p>
-						</td>						
-					</tr>					
-				</table>
-			</article>
+				<nav>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 navbar">
+							<a href="index.html" class="btn col-lg-2"><span class="oi oi-home" title="home" aria-hidden="true"></span></a> <a href="menu.html" class="btn col-lg-2">Menu</a> <a href="contact.html" class="btn col-lg-2">Contact Us</a>
+						</div>	
+					</div>	
+				</nav>
+
 			
-		<article id="beverages">
-			<table>
-					<thead>
-						<tr>
-							<th colspan="2"><h1>Beverages</h1></th>
-						</tr>	
-					</thead>
-					<tbody>
-						<tr>
-							<td>Root Beer</td>
-							<td>$3.50</td>
-						</tr>
-						
-						<tr>
-							<td>Bottled Water</td>
-							<td>$1.25</td>
-						</tr>
-						
-						<tr>
-							<td>Lemondade</td>
-							<td>$1.00</td>
-						</tr>
+			<section>
+				<article id="food">
+						<div class="row">
+							<div class="col-lg-10 offset-lg-1">
+								<table>
+									<thead>
+										<tr>
+											<th colspan="3"><h1>Food Items</h1></th>
+										</tr>	
+									</thead>
+									
+									<tr>
+										<td>
+											<p><span class="foodTitle">Fried Chicken and Fries</span><br />
+											Our world famous combo. Come enjoy our golden brown fried chicken, with you choice of drumsticks, wings, or breast.
+											Served with a plate of our cajun golden brown french fries. Also comes with a fresh buttery biscuit and medium drink.</p>
+											<p>$9.95</p>	
+										</td>
 							
-						<tr>
-							<td>Iced Tea</td>>
-							<td>$1.25</td>
-						</tr>
-					</tbody>
-				</table>
+										<td>
+											<p><span class="foodTitle">Spicy Chicken Sandwich and Fries</span><br />
+												Our world famous spicy chicken filet on your choice of plain or sesame seed bun. 
+												Served with a plate of our cajun golden brown french fries. Includes drink.</p>
+											<p>$8.50</p>
+										</td>
+								
+										<td>
+											<p><span class="foodTitle">Chicken Tenders and Fries</span><br />
+											Have some of our golden brown chicken in tender form. Served with a plate of fries Served with a plate of our cajun golden brown french fries. Includes drink.</p>
+											<p>$8.50</p>
+										</td>						
+									</tr>
+								
+									<tr>
+										<td>
+											<p><span class="foodTitle">Boneless Wings</span><br />
+											Enjoy a bucked of boneless wings, including regular, spicy, or honey BBQ flavor!</p>
+											<p>$9.95</p>	
+										</td>
+							
+										<td>
+											<p><span class="foodTitle">Frech Fries</span><br /> 
+											A plate of our cajun golden brown french fries. Includes drink.</p>
+											<p>$2.00</p>
+										</td>
+								
+										<td>
+											<p><span class="foodTitle">Buttery biscuit</span><br />
+											One of our golden buttery biscuits</p>
+											<p>$1.00</p>
+										</td>						
+									</tr>					
+								</table>
+							</div>
+						</div>	
+								<div class="row">
+					<div class="col-lg-2 offset-lg-5">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="2"><h1>Beverages</h1></th>
+								</tr>	
+							</thead>
+						
+							<tbody>
+								<tr>
+									<td>Root Beer</td>
+									<td>$3.50</td>
+								</tr>
+							
+								<tr>
+									<td>Bottled Water</td>
+									<td>$1.25</td>
+								</tr>
+								
+								<tr>
+									<td>Lemondade</td>
+									<td>$1.00</td>
+								</tr>
+									
+								<tr>
+									<td>Iced Tea</td>
+									<td>$1.25</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</article>
 		</section>
 
-        <footer>
-		<hr />
-			<p>123 Chickapea Road, Charlotte, North Carolina, 55555</p>
-			<p>555-244-2536</p>
-        </footer>
+		<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<footer>
+						<p>123 Chickapea Road, Charlotte, North Carolina, 55555</p>
+						<p>555-244-2536</p>
+			
+					</footer>
+				</div>	
+			</div>
+		</div>	
+	        <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body> 
 </html>
